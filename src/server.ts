@@ -46,8 +46,6 @@ server.register(fastifySwagger, {
 	},
 });
 
-server.register(require('fastify-cors'));
-
 server.register(fastifySensible);
 server.register(fastifyAutoload, {
 	dir: join(__dirname, 'routes'),
