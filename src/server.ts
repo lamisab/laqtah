@@ -17,6 +17,11 @@ export const server = fastify({
 	},
 }).withTypeProvider<TypeBoxTypeProvider>();
 
+server.register(require("@fastify-cors"),{
+	origin: "*",
+	method: ["GET"],
+});
+
 server.register(fastifyJwt, {
 	secret: '123',
 });
