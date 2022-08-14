@@ -6,7 +6,8 @@ import Fuse from "fuse.js";
 
 
 const Portress = Type.Object({
-	username: Type.String(),
+    portress_id:Type.String(),
+    username: Type.String(),
     password: Type.String(),
     email: Type.String(),
     url: Type.String(),
